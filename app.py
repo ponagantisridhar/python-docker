@@ -45,8 +45,8 @@ def db_init():
     cursor.execute("CREATE DATABASE inventory")
     cursor.execute("USE inventory")
 
-    cursor.execute("DROP TABLE IF EXISTS widgets")
-    cursor.execute("CREATE TABLE widgets (name VARCHAR(255), description VARCHAR(255))")
+    # cursor.execute("DROP TABLE IF EXISTS widgets")
+    # cursor.execute("CREATE TABLE widgets (name VARCHAR(255), description VARCHAR(255))")
     cursor.close()
 
     return 'init database'
